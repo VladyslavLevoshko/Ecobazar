@@ -27,6 +27,40 @@
     --green-50: #EDF2EE;
 }
 
+@media (max-width: 1024px){
+    #first-line-header, #input-line > :not(:first-child), #shop-cart-info, #third-line-header {
+        display: none;
+    }
+
+    #second-line-header {
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+        justify-content: flex-end;
+    }
+
+    #logo {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    #second-line-header svg, #placeholder {
+        width: 44px;
+        height: 44px;
+    }
+
+    #header {
+        display: flex;
+        height: auto;
+    }
+
+    
+}
+
+
+
+@media (min-width: 1024px) {
+
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -452,4 +486,5 @@ body {
     font-weight: 700;
     font-size: 0.833vw;
     
+}
 }
